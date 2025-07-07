@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: skillbridge-api
+    env: docker
+    plan: free
+    region: singapore
+    repo: https://github.com/shubho129/skillbridge-platform
+    dockerContext: .
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
